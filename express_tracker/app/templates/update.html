@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Expense Tracker - Updata{% endblock %}
+
+{% block content %}
+  <div class="container my-5">
+    <div class="row g-4">      
+      <!-- Add Updata Expense Form -->
+      <div class="col-lg-12">
+        <div class="card p-4">
+          <h4 class="mb-3 text-primary">Updata Expense</h4>
+          {% if data %}
+            <form method="POST">
+              {% csrf_token %}
+              <div class="mb-3">
+                <label for="amount" class="form-label">Amount</label>
+                <input type="number" class="form-control" name="amount" value="{{data.amount}}" required>
+              </div>
+              <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <input type="text" class="form-control" name="category" value="{{data.category}}" required>
+              </div>
+              <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" name="desc" rows="2" >{{data.desc}}</textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Add Expense</button>
+            </form>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

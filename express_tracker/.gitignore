@@ -1,0 +1,79 @@
+# =========================================
+# Python general
+# =========================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================================
+# Virtual environment
+# =========================================
+venv/
+env/
+ENV/
+.venv/
+.python-version
+
+# =========================================
+# Django / Flask specific
+# =========================================
+db.sqlite3
+instance/
+*.log
+*.pot
+*.pyc
+*.pyo
+*.mo
+*.db
+*.sqlite3
+*.env
+.env
+config.json
+
+# =========================================
+# VS Code / PyCharm / IDEs
+# =========================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# =========================================
+# OS-generated files
+# =========================================
+.DS_Store
+Thumbs.db
+
+# =========================================
+# Compiled / distribution files
+# =========================================
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+__pypackages__/
+
+# =========================================
+# Unit test / coverage reports
+# =========================================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# =========================================
+# Jupyter Notebook checkpoints
+# =========================================
+.ipynb_checkpoints/
+
+# =========================================
+# Others (optional)
+# =========================================
+*.bak
+*.tmp
+*.swp
